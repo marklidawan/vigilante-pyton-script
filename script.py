@@ -67,8 +67,8 @@ def validationsend():
 		try:
 			connection = mysql.connector.connect(host='18.139.15.242',
 												 database='vigilante',
-												 user='remdbtest',
-												 password='londonfoster@db@test')
+												 user='',
+												 password='')
 			if connection.is_connected():
 				db_Info = connection.get_server_info()
 				print("Connected to MySQL Server version ", db_Info)
@@ -110,8 +110,8 @@ def checkonline():
 		try:
 			connection = mysql.connector.connect(host='18.139.15.242',
 												 database='vigilante',
-												 user='remdbtest',
-												 password='londonfoster@db@test')
+												 user='',
+												 password='')
 			if connection.is_connected():
 				db_Info = connection.get_server_info()
 				cursor = connection.cursor()
